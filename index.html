@@ -3,37 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduLearn - Forgot Password</title>
+    <title>EduTech- Home</title>
+   
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>EduLearn</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="live.html">Live Classes</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
+        
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                    <li><a href="#">EduTech</a></li> 
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses5.html">Courses</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="live.html">Live Classes</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="game.html">Games</a></li>
+                    <button><a href="login.html">Login</a></button>
+                </ul>
+            </div>
         </nav>
     </header>
     
     <main>
-        <section class="forgot-password-form">
-            <h2>Reset Your Password</h2>
-            <p>Enter your email address and we'll send you a link to reset your password.</p>
-            <form action="#" method="POST">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <button type="submit" class="btn">Send Reset Link</button>
-            </form>
-            <p>Remembered your password? <a href="login.html">Login here</a></p>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('student.avif');
+                background-size: cover;
+                background-position: center;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+            .content {
+                max-width: 900px;
+            }
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 1.2rem;
+                margin-bottom: 30px;
+            }
+            .btn1 {
+                background-color: #ff6600;
+                color: white;
+                padding: 15px 30px;
+                text-decoration: none;
+                font-size: 1.2rem;
+                border-radius: 10px;
+                box-shadow: 5px 5px 5px;
+            }
+            .btn1:hover {
+                background-color:white;
+                color:#ff6600 ;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <h1>Welcome to EduTech</h1>
+                <p>Edutech is an innovative web-based platform that gamifies scientific learning through interactive animations and competitive games. Our unique approach makes education more enjoyable and accessible to all students.</p>
+                <a href="courses5.html" class="btn1">Start Learning</a>
+            </div>
+        </div>
+        
+        <section class="featured-courses">
+            <h2>Featured Courses</h2>
+            <div class="course-list">
+                <div class="course">
+                    <img src="phy.jpg" alt="Physics Course">
+                    <h3>Physics Course</h3>
+                    <p>From classes 10 to 12.</p>
+                    <a href="courses.html" class="btn">View Course</a>
+                </div>
+                <div class="course">
+                    <img src="bio.jpg" alt="Biology Course">
+                    <h3>Biology Course</h3>
+                    <p>From classes 10 to 12.</p>
+                    <a href="courses2.html" class="btn">View Course</a>
+                </div>
+                <div class="course">
+                    <img src="math.jpg" alt="Math Course">
+                    <h3>Math Course</h3>
+                    <p>From classes 10 to 12.</p>
+                    <a href="courses3.html" class="btn">View Course</a>
+                </div>
+                <div class="course-list">
+                    <div class="course">
+                        <img src="java.png" alt="Physics Course">
+                        <h3>Computer Course</h3>
+                        <p>From classes 10 to 12.</p>
+                        <a href="courses4.html" class="btn">View Course</a>
+                    </div>
+            </div>
+        </section>
+        <section class="student-reviews">
+            <h2>Student Reviews</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <img src="student1.jpg" alt="Jane Doe">
+                    <h3>Jane Doe</h3>
+                    <p>"This game made learning so much fun! Highly recommended."</p>
+                </div>
+                <div class="review-card">
+                    <img src="student2.jpg" alt="John Smith">
+                    <h3>John Smith</h3>
+                    <p>"I love how interactive and engaging this is. Helped me a lot!"</p>
+                </div>
+                <div class="review-card">
+                    <img src="student3.jpg" alt="Emily Johnson">
+                    <h3>Emily Johnson</h3>
+                    <p>"Great way to reinforce concepts learned in class!"</p>
+                </div>
+            </div>
         </section>
     </main>
     
@@ -44,7 +143,7 @@
             <a href="privacy.html">Privacy Policy</a>
             <a href="terms.html">Terms of Service</a>
         </div>
-        <p>&copy; 2024 EduLearn. All Rights Reserved.</p>
+       
     </footer>
 </body>
 </html>
