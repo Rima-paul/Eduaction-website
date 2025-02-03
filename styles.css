@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+   
+    background-color: #8e7818;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.5rem;
+}
+.navbar{
+  background-color:#8e7818;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navdiv{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: #f4f4f4;
+}
+li{
+    list-style: none;
+    display:inline-block;
+}
+li a{
+    color:#f4f4f4;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 25px;
+    text-decoration: none;
+}
+button{
+    background-color: chartreuse;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+button a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+button:hover{
+    background-color:white;
+    color: chartreuse;
+}
+
+/*nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    background: #005bb5;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('student.avif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.content {
+    max-width: 600px;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #e65c00;
+}
+/*.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('student.avif');;
+    color: white;
+
+}*/
+
+
+.btn {
+    display: inline-block;
+    background: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color:white;
+    color: #ff9800;
+}
+.featured-courses {
+    padding: 50px;
+    text-align: center;
+    background: white;
+}
+
+.course-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.course {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+   
+}
+
+.course img {
+    width: 100%;
+    border-radius: 5px;
+   
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background: #005bb5;
+    color: white;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    background: #0073e6;
+    color: white;
+}
+
+
+/*Student Reviews Section */
+.student-reviews {
+    text-align: center;
+    padding: 40px;
+    background: #fff;
+    margin: 40px auto;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.review-card {
+    background:linear-gradient(#3460e4 ,#d890e0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    
+}
+/* Beautiful Hover Effect for Cards */
+.review-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+.review-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review-card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #f9fafb;
+}
+
+.review-card p {
+    font-size: 14px;
+    color: #131313;
+}
+
