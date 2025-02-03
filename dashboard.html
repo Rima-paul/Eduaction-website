@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg,#8e7818, #8e7818);
+            color: #333;
+        }
+        header {
+            background: #8e7818;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .dashboard-container {
+            display: flex;
+        }
+        
+        .dashboard-main {
+            flex: 1;
+            padding: 20px;
+        }
+        .progress-tracker {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .progress-bar {
+            background: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 20px;
+        }
+        .progress {
+            background: #d1bb5b;
+            height: 100%;
+            width: 65%;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        .course-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .course-card {
+            background: #ffb6b9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+        }
+        .course-card h3 {
+            color: #6a0572;
+        }
+        .btn {
+            background: #6a0572;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #8a2be2;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #8e7818;
+            color: white;
+            margin-top: 20px;
+        }
+        .dashtext{
+          color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                    <li><a href="#">EduTech</a></li> 
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses5.html">Courses</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="live.html">Live Classes</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="game.html">Games</a></li>
+                    <button><a href="login.html">Login</a></button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="dashboard-container">
+       
+        <main class="dashboard-main">
+            <section class="welcome-section">
+                <h2 class="dashtext">Welcome, Yash!</h2>
+                <p class="dashtext">Here is an overview of your learning progress.</p>
+            </section>
+            <section class="progress-tracker">
+                <h2 class="dashtext">Learning Progress</h2>
+                <div class="progress-bar">
+                    <div class="progress">65%</div>
+                </div>
+            </section>
+            <section class="my-courses">
+                <h2 class="dashtext">My Courses</h2>
+                <div class="course-grid">
+                    <div class="course-card">
+                        <h3>Physics</h3>
+                        <p>Progress: 80%</p>
+                        <button class="btn">Continue</button>
+                    </div>
+                    <div class="course-card">
+                        <h3>Biology</h3>
+                        <p>Progress: 50%</p>
+                        <button class="btn">Continue</button>
+                    </div>
+                    <div class="course-card">
+                        <h3>Math</h3>
+                        <p>Progress: 35%</p>
+                        <button class="btn">Continue</button>
+                    </div>
+                    <div class="course-card">
+                        <h3>Computer</h3>
+                        <p>Progress: 25%</p>
+                        <button class="btn">Continue</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 EduLearn. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                    <li><a href="#">EduTech</a></li> 
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses5.html">Courses</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="live.html">Live Classes</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="game.html">Games</a></li>
+                    <button><a href="login.html">Login</a></button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+   
+    <!--<main>
+        <section class="dashboard">
+            <h2>Welcome to Your Dashboard</h2>
+            <div class="progress">
+                <h3>Your Progress</h3>
+                <p>Courses Completed: <span>2</span></p>
+                <p>Ongoing Courses: <span>3</span></p>
+                <p>Badges Earned: <span>5</span></p>
+            </div>
+            
+            <div class="recommended">
+                <h3>Recommended Courses</h3>
+                <div class="course-list">
+                    <div class="course">
+                        <img src="advanced-js.jpg" alt="Advanced JavaScript">
+                        <h4>Advanced JavaScript</h4>
+                        <p>Deep dive into JavaScript concepts.</p>
+                        <a href="course-details.html" class="btn">Start Learning</a>
+                    </div>
+                    <div class="course">
+                        <img src="python-data.jpg" alt="Python for Data Science">
+                        <h4>Python for Data Science</h4>
+                        <p>Analyze and visualize data with Python.</p>
+                        <a href="course-details.html" class="btn">Start Learning</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <p>&copy; 2024 EduLearn. All Rights Reserved.</p>
+    </footer>-->
+</body>
+</html>
