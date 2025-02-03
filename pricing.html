@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech- Home</title>
+   
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                    <li><a href="#">EduTech</a></li> 
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses5.html">Courses</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="live.html">Live Classes</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="game.html">Games</a></li>
+                    <button><a href="login.html">Login</a></button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, url='student.avif');
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: #ff6b6b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px;
+        }
+        .pricing-card {
+            background: white;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .pricing-card:hover {
+            transform: scale(1.05);
+        }
+        .pricing-card h2 {
+            color: #6a0572;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+        .features {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .btn {
+            background: #6a0572;
+            color: white;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background: #8a2be2;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff6b6b;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EduLearn Pricing</h1>
+    </header>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h2>Basic</h2>
+            <p class="price">Free</p>
+            <ul class="features">
+                <li>Access to free courses</li>
+                <li>Community support</li>
+                <li>Limited quizzes & assessments</li>
+            </ul>
+            <button class="btn">Get Started</button>
+        </div>
+        <div class="pricing-card" style="border: 2px solid #ff6b6b;">
+            <h2>Pro</h2>
+            <p class="price">$19.99/month</p>
+            <ul class="features">
+                <li>Access to all courses</li>
+                <li>Certificates upon completion</li>
+                <li>Live Q&A with instructors</li>
+                <li>Downloadable materials</li>
+            </ul>
+            <button class="btn">Subscribe Now</button>
+        </div>
+        <div class="pricing-card">
+            <h2>Enterprise</h2>
+            <p class="price">Custom Pricing</p>
+            <ul class="features">
+                <li>Team learning plans</li>
+                <li>Exclusive live webinars</li>
+                <li>24/7 support</li>
+                <li>Personalized learning paths</li>
+            </ul>
+            <button class="btn">Contact Us</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 EduLearn. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+    <!--<main>
+        <section class="pricing">
+            <h2>Choose Your Plan</h2>
+            <div class="pricing-plans">
+                <div class="plan">
+                    <h3>Free Plan</h3>
+                    <p>$0/month</p>
+                    <ul>
+                        <li>Access to free courses</li>
+                        <li>Basic quizzes & assessments</li>
+                        <li>Community support</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                <div class="plan">
+                    <h3>Premium Plan</h3>
+                    <p>$19.99/month</p>
+                    <ul>
+                        <li>Unlimited course access</li>
+                        <li>Exclusive live classes</li>
+                        <li>Certificate of completion</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="#" class="btn">Subscribe Now</a>
+                </div>
+                <div class="plan">
+                    <h3>Enterprise Plan</h3>
+                    <p>Custom Pricing</p>
+                    <ul>
+                        <li>Team training & analytics</li>
+                        <li>Personalized learning paths</li>
+                        <li>Dedicated support</li>
+                        <li>Custom integration</li>
+                    </ul>
+                    <a href="#" class="btn">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <p>&copy; 2024 EduLearn. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
